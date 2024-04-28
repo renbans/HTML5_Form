@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>          
+            fieldset{
+                background-color: rgba(164, 164, 164, 0.50);
+                border-radius: 10px;
+                border: none;
+            }
+
+            label {
+                display: block;
+                padding-right: 5px;
+                margin: 2px;
+            }
+    </style>
+</head>
+<body>
+     <main>
+        <form id="signup" method="post" action="#" autocomplete="on">
+            <fieldset>
+                <legend contenteditable>Formulário</legend>
+                    <fieldset>    
+                        <legend>Dados pessoas</legend>                           
+                            <label>Nome<span>*</span></label><input type="text" required autofocus>
+                            <label>Idade<span>*</span></label><input type="number" min="0" max="99" required>
+                            <label>Telefone<span>*</span></label><input type="text" placeholder="(xx)xxxxx-xxxx" required>
+                            <label>E-mail<span>*</span></label><input type="email" placeholder="Exemplo@gmail.com" required>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Endereço</legend>                                        
+                            <label>CEP</label><input type="text">
+                            <label>Estado</label><input type="text">
+                            <label>Cidade</label><input type="text">
+                            <label>Bairro</label><input type="text">
+                            <label>Endereço</label><input type="text">
+                            <label>Número</label><input type="text">
+                            <label>Sem número</label><input type="checkbox" id="sn" value="sn">
+                            <label>Complemento</label><input type="text">
+                    </fieldset>
+                            <button type="reset">Reset</button>
+                            <input type="submit" value="Enviar"></input>                         
+            </fieldset>
+        </form>
+    </main> 
+</body>
+</html>
